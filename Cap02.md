@@ -28,3 +28,10 @@
       - Banco, agência, conta, melhor data de cobrança.
     Informações sociais:
       - ID facebook, Instagram, Twitter, Youtube
+    Onde é usado:
+      Para viéses operacionais, Analíticos, Colaborativos e Estratégicos.
+    Aplicações práticas:
+      Vendas, Serviços, Gestão, Marketing
+    CRM pode ser usado para automatizar escolhas de produtos para um cliente
+    dependendo de como é o seu perfil de consumo, juntando todos os dados
+    que são catalogados. 
