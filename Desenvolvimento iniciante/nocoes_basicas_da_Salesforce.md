@@ -96,4 +96,20 @@ troca de dados.
     rápida para encontrar a página desejada.
 
 > Familiarizar-se com o menu de Configuração;
-    
+    Utilizar o campo de busca rápida para encontrar as páginas mais rapidamente.
+
+# Fortaleza-se com o AppExchange:
+
+> O que é o AppExchange?
+    É uma loja virtual da Salesforce de aplicativos, podendo ser gratuitos ou não
+
+> Antes de comprar uma aplicação:
+    Que problema de negócios você está tentando resolver?
+    Quais são suas maiores dificuldades neste exato momento?
+    Quantos usuários precisam desse aplicativo?
+    Qual é sua verba?
+    Qual é seu cronograma?
+
+> Para onde foi meu aplicativo? 
+    Em configuração pesquise: Pacotes instalados.
+    Clique no pacote e em Exibir componentes, para saber mais sobre o pacote.
