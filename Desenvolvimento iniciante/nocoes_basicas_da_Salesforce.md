@@ -28,3 +28,22 @@ Registros são os dados reais associados a um objeto.
 Campos: São colunas nas tabelas do banco de dados do objeto.
 Os objetos padrão e personalizados têm campos
 
+Organização: uma instância específica do Salesforce. A empresa pode ter uma ou
+mais organizações.
+
+Desenvolvimento Declarativo: Capacidade de criar páginas sem usar códigos.
+utilizando formulários e ações de arrastar e soltar.
+
+Desenvolvimento programático: Usa itens como componentes do Lightning.
+(Explorar depois essa área.)
+
+Sempre que for personalizar algum campo, clique no ícone da engrenagem e em 
+configurações, depois vá em Gerenciador de objetos
+
+Tipo de dados: Indica qual é o tipo de informação daquele campo.
+
+Nome do campo e id do campo: O nome é para aparecer nos registros e o id é
+usado para fins de API's.
+
+Níveis de segurança: Você define quais tipos de usuários podem fazer o quê
+
