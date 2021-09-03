@@ -47,3 +47,19 @@ usado para fins de API's.
 
 Níveis de segurança: Você define quais tipos de usuários podem fazer o quê
 
+# Descobrir casos de uso para a plataforma:
+
+Sempre que você cria um objeto personalizado, é adicionado esse objeto no 
+rastreamento do Chatter. O rastreamento do Chatter permite que várias pessoas
+comentem sobre um registro específico. Assim evitam ficar usando e-mails.
+E ajudam na tomada de decisão, pois todos os comentários estão reunidos.
+
+> Prestar atenção nesses processor que podem ser melhores geridos pelo Salesforce
+    Grandes colaborações por email
+    Dependência de planilhas
+    Documentos locais compartilhados
+    Etapas manuais demoradas e repetitivas
+    Impacto apenas em alguns departamentos (convém minimizar a quantidade de partes interessadas durante o processo de aprendizagem)
+
+# Entender a arquitetura do Salesforce:
+
