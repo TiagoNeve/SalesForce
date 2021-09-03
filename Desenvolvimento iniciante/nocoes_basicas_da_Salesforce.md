@@ -63,3 +63,23 @@ E ajudam na tomada de decisão, pois todos os comentários estão reunidos.
 
 # Entender a arquitetura do Salesforce:
 
+> Importante para anotar:
+    A Salesforce é uma empresa de nuvem. Tudo o que oferecemos está na nuvem de multilocatários confiável.
+
+    A Salesforce Platform é a base de nossos serviços. Ela funciona com metadados e é feita de partes diferentes, como serviços de dados, inteligência artificial e APIs sólidas para desenvolvimento.
+    
+    Todos os nossos aplicativos se baseiam na plataforma. Nossas ofertas pré-fabricadas, como o Sales Cloud e o Marketing Cloud, além dos aplicativos criados usando a plataforma, têm funcionalidades avançadas e consistentes.
+    
+    Tudo está integrado. Nossas tecnologias de plataforma, como a análise preditiva e a estrutura de desenvolvimento, estão integradas a todos os produtos que oferecemos e a tudo criado por você.
+
+Na Salesforce CONFIANÇA é prioridade máxima.
+Além de usar os recursos de Multilocação, em que serviços e empresas diferentes
+compartilham de uma mesma nuvem ou hardware, como uma espécie de apartamento
+de organizações.
+
+Metadados no salesforce: Basicamente os metadados são os nomes dos campos e os
+id's além dos relacionamentos dos objetos, você não tem a informação em si, mas
+tem o nome daquele campo e pode entender o que ele significa.
+
+API: Possibilita que diferentes softwares se comunique com o Salesforce na
+troca de dados.
