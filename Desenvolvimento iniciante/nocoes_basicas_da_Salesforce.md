@@ -83,3 +83,17 @@ tem o nome daquele campo e pode entender o que ele significa.
 
 API: Possibilita que diferentes softwares se comunique com o Salesforce na
 troca de dados.
+
+# Navegar pelas configurações:
+
+> Configuração: sua nova casa no trabalho
+    * Gerenciador de objetos: Onde pode gerenciar os objetos padrões e personalizados
+    * Menu de configuração: Possibilita gerenciar seus usuários a modificar
+    configurações de segurança.
+    * Janela principal: Ver o que está sendo feito no momento.
+
+    No menu de configurações você pode ir clicando nas opções ou utilizar a pesquisa
+    rápida para encontrar a página desejada.
+
+> Familiarizar-se com o menu de Configuração;
+    
