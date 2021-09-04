@@ -78,3 +78,9 @@
     usuário, basta ir em Gerenciar atribuições e Adicionar atribuições.
     Selecione os usuários a serem atribuídos a este conjunto de permissões e 
     clique em Atribuir.
+
+# Controle o acesso aos campos:
+
+> Modificar a segurança em nível de campo.
+    Basicamente é esconder ou não permitir edição a determinados usuários.
+    
