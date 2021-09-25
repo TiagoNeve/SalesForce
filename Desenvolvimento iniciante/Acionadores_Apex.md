@@ -113,3 +113,65 @@ executado um ação de criação ou atualização de registro, essas variáveis 
 
 ## Variáveis de contexto do acionador
 
+Existe uma lista imensa nesse site:
+> https://trailhead.salesforce.com/pt-BR/content/learn/modules/apex_triggers/apex_triggers_intro?trail_id=force_com_dev_beginner
+
+Verificar depois.
+
+## Chamando um Método de classe a partir de um Acionador
+
+É possível chamar métodos estáticos de Apex Classes criados na organização
+que o objeto está inserido.
+
+>Exemplo:
+    trigger ExampleTrigger on Contact (after insert, after delete)
+    {
+        if (Trigger.isInsert)
+        {
+            // Pega a quantidade de registros que foi gerado ao ativar o acionador.
+            Integer recordCount = Trigger.New.size();
+
+            // Chama o método utilitário de outra classe
+            EmailManager.sendMail('Your email address', 'Trailhead Trigger Tutorial', recordCount + ' contact(s) were inserted.');
+        }
+        else if (Trigger.isDelete)
+        {
+            // Processo after delete
+        }
+    }
+
+## Adicionando registros relacionados
+
+>Exemplo:
+    trigger AddRelatedRecord on Account (after insert, after update)
+    {
+        List<Opportunity> oppList = new List<Opportunity>();
+
+        Map<Id,Account> acctsWithOpps = newMap<Id,Account>(
+            [SELECT Id,(SELECT Id FROM Opportunities) FROM Account WHERE Id IN :Trigger.New]
+        );
+
+        for (Account a : Trigger.New)
+        {
+            System.debug('acctsWithOpps.get(a.Id).Opportunities.size()=' + accts.WithOpps.get(a.Id).Opportunities.size());
+
+            if (acctsWithOpps.get(a.Id).Opportunities.size() == 0) 
+            {
+                oppList.add(new Opportunity(
+                    Name=a.Name + ' Opportunity',
+                    StageName='Prospecting'f,
+                    CloseDate=System.today().addMonths(1),
+                    AccountId=a.Id 
+                ));
+
+            }
+        }
+
+        if (oppList.size() > 0)
+        {
+            insert oppList;
+        }
+    }
+
+## Usando exceções do acionador
+
