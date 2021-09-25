@@ -50,3 +50,38 @@ String phone = acct.Phone;
 // Data Manipulation Language (DML).
 
 // Para recuperar um registro, use o Salesforce Object Query Language (SOQL).
+
+ADDMONTH(TODAY(), OportunidadeParaCancelar__r.Meses__c)
+
+12-9 = 3 -> 12-10=2
+9+5 = 14 -> 10+5=15
+14 -12 = 2 -> 15 - 12=3
+2 + 3 = 5 -> 
+
+12 - MONTH(TODAY()) = 3
+MONTH(TODAY()) + OportunidadeParaCancelar__r.Meses__c = 14
+( MONTH(TODAY()) + OportunidadeParaCancelar__r.Meses__c ) - 12 = 2
+( ( MONTH(TODAY()) + OportunidadeParaCancelar__r.Meses__c ) - 12  ) + ( 12 - MONTH(TODAY()) ) = 5
+
+
+
+
+IF (
+  TODAY() < OportunidadeParaCancelar__r.MesesRestantes__c,
+
+
+    IF ( YEAR(TODAY())  <> YEAR(OportunidadeParaCancelar__r.MesesRestantes__c),
+
+
+    (( ABS ( (MONTH(TODAY()) + MONTH(((OportunidadeParaCancelar__r.MesesRestantes__c - TODAY()) + TODAY()))) - 12 
+          )
+     * OportunidadeParaCancelar__r.Amount
+     ) * 0.20
+       ),
+
+
+       ( CEILING ( ( MONTH(TODAY()) + MONTH(( (OportunidadeParaCancelar__r.MesesRestantes__c - TODAY()) + TODAY())) ) / 12 
+          )
+     * OportunidadeParaCancelar__r.Amount
+     ) * 0.20),
+0)
