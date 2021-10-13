@@ -114,3 +114,27 @@ poderá dar uma breve descrição sobre o que o atributo significa, utilizando o
 </aura:component>
 ```
 
+> Atividade:
+```html
+<!-- Create a packing list item component -->
+<!-- Name component: campingListItem 
+     Attribute name: item / type Camping_Item__c / required
+     Use expression to display: Name, Price__c, Quantity__c and Packed__c
+-->
+
+<aura:component>
+    <aura:attribute name="item" type="Camping_Item__c" required="true" />
+
+    <ul>
+        <li> {!v.item.Name} </li>
+        <li> <lightning:formattedNumber value="{!v.item.Price__c}" style="currency" /> </li>
+        <li> <lightning:formattedNumber value="{!v.item.Quantity__c}" style="decimal" maximumFractionDigits="0" /> </li>
+        <li> <lightning:input type="toggle" 
+                              label="Packed"
+                              name="packed"
+                              checked="{!v.item.Packed__c}"/> 
+        </li>
+    </ul>
+</aura:component>
+
+```
